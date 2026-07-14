@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://www.shfitnesstools.com.au/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.shfitnesstools.com.au/about.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.shfitnesstools.com.au/contact.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.shfitnesstools.com.au/calculators/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.shfitnesstools.com.au/calculators/categories.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.shfitnesstools.com.au/blog/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.shfitnesstools.com.au/privacy-policy.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.shfitnesstools.com.au/terms.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://www.shfitnesstools.com.au/disclaimer.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+  <!-- Calculators -->
+  <url><loc>https://www.shfitnesstools.com.au/calculators/macro-calculator.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.shfitnesstools.com.au/calculators/protein-intake-calculator.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.shfitnesstools.com.au/calculators/water-intake-calculator.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.shfitnesstools.com.au/calculators/creatine-dosage-calculator.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.shfitnesstools.com.au/calculators/body-fat-percentage-calculator.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.shfitnesstools.com.au/calculators/ffmi-calculator.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.shfitnesstools.com.au/calculators/ideal-weight-calculator.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.shfitnesstools.com.au/calculators/lean-body-mass-calculator.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.shfitnesstools.com.au/calculators/one-rep-max-calculator.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.shfitnesstools.com.au/calculators/weight-plate-calculator.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.shfitnesstools.com.au/calculators/wilks-dots-calculator.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.shfitnesstools.com.au/calculators/heart-rate-zone-calculator.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.shfitnesstools.com.au/calculators/running-pace-calculator.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.shfitnesstools.com.au/calculators/vo2-max-calculator.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.shfitnesstools.com.au/calculators/calories-burned-calculator.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.shfitnesstools.com.au/calculators/steps-to-distance-calculator.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Blog -->
+  <url><loc>https://www.shfitnesstools.com.au/blog/how-to-count-macros.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.shfitnesstools.com.au/blog/best-macro-split-for-your-goal.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.shfitnesstools.com.au/blog/body-recomposition-explained.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.shfitnesstools.com.au/blog/tracking-progress-beyond-the-scale.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.shfitnesstools.com.au/blog/natural-muscle-growth-limits.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+</urlset>

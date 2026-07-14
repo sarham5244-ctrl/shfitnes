@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One Rep Max Calculator — 1RM & Training Percentages | SH Fitness Tools</title>
+<meta name="description" content="Free one rep max calculator. Estimate your 1RM from any working set and get a full training percentage table.">
+<link rel="canonical" href="https://www.shfitnesstools.com.au/calculators/one-rep-max-calculator.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="One Rep Max Calculator | SH Fitness Tools">
+<meta property="og:description" content="Free one rep max calculator. Estimate your 1RM from any working set and get a full training percentage table.">
+<meta property="og:url" content="https://www.shfitnesstools.com.au/calculators/one-rep-max-calculator.html">
+<meta property="og:image" content="https://www.shfitnesstools.com.au/assets/images/og-one-rep-max-calculator.jpg">
+<meta property="og:site_name" content="SH Fitness Tools">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="One Rep Max Calculator | SH Fitness Tools">
+<meta name="twitter:description" content="Free one rep max calculator. Estimate your 1RM from any working set and get a full training percentage table.">
+<meta name="twitter:image" content="https://www.shfitnesstools.com.au/assets/images/og-one-rep-max-calculator.jpg">
+
+
+<link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="../manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/base.css">
+
+<script>
+  (function () {
+    var saved = localStorage.getItem('shft-theme');
+    var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+  window.SHFT_PAGE = "calculators";
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "One Rep Max Calculator | SH Fitness Tools",
+  "url": "https://www.shfitnesstools.com.au/calculators/one-rep-max-calculator.html",
+  "applicationCategory": "HealthApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "AUD" },
+  "description": "Free one rep max calculator. Estimate your 1RM from any working set and get a full training percentage table."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.shfitnesstools.com.au/" },
+    { "@type": "ListItem", "position": 2, "name": "Calculators", "item": "https://www.shfitnesstools.com.au/calculators/" },
+    { "@type": "ListItem", "position": 3, "name": "One Rep Max Calculator", "item": "https://www.shfitnesstools.com.au/calculators/one-rep-max-calculator.html" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How accurate is this estimate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It's generally within a few percent of your true max for sets of 1-6 reps. Accuracy drops the higher your rep count goes, since fatigue starts to affect the relationship."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I train at my estimated 1RM?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No \u2014 use the percentage table below to work out training weights at whatever intensity your program calls for, rather than testing the estimated max directly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this work for any exercise?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It works best for compound barbell lifts like squat, bench and deadlift. It's less reliable for isolation exercises or bodyweight movements."
+      }
+    }
+  ]
+}
+</script>
+
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header" data-header>
+  <div class="nav-shell">
+    <a href="../index.html" class="brand"><span class="brand-mark">SH</span>SH Fitness Tools</a>
+    <ul class="nav-links">
+      <li><a href="index.html">All Calculators</a></li>
+      <li><a href="categories.html">Categories</a></li>
+      <li><a href="../blog/index.html">Articles</a></li>
+      <li><a href="../about.html">About</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="icon-btn" type="button" aria-label="Search" id="site-search-toggle">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </button>
+      <button class="icon-btn" type="button" id="theme-toggle" aria-label="Toggle dark mode">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="theme-icon"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <a class="nav-cta" href="index.html">Browse tools</a>
+      <button class="nav-mobile-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="17" height="17"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+<main id="main">
+  <section class="hero" style="padding-bottom:24px;">
+    <div class="container">
+      <nav class="breadcrumbs reveal" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a><span aria-hidden="true">/</span><a href="index.html">Calculators</a><span aria-hidden="true">/</span><span aria-current="page">One Rep Max Calculator</span>
+      </nav>
+      <span class="eyebrow reveal">Strength</span>
+      <h1 class="reveal balance">One Rep Max Calculator</h1>
+      <p class="lede reveal">Enter a recent working set to estimate your one rep max and training percentages.</p>
+    </div>
+  </section>
+  <section class="section-tight container" id="calculator">
+    <div class="calc-layout">
+      <div class="card calc-card">
+        <form id="calc-form" novalidate>
+          <div class="form-group">
+            <label>Units</label><br>
+            <div class="segmented">
+              <input type="radio" name="units" id="units-kg" value="kg" checked><label for="units-kg">kg</label>
+              <input type="radio" name="units" id="units-lb" value="lb"><label for="units-lb">lb</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="weight">Weight lifted</label>
+            <div class="input-with-suffix">
+              <input class="input" type="number" id="weight" name="weight" min="1" max="500" step="0.5" placeholder="e.g. 100" inputmode="decimal">
+              <span class="input-suffix">kg</span>
+            </div>
+            
+            <p class="error-message" id="weight-error"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5v.01"/></svg><span></span></p>
+          </div>
+          <div class="form-group">
+            <label for="reps">Reps completed</label>
+            <div class="input-with-suffix">
+              <input class="input" type="number" id="reps" name="reps" min="1" max="15" step="1" placeholder="e.g. 5" inputmode="decimal">
+              <span class="input-suffix">reps</span>
+            </div>
+            <p class="form-hint">Most accurate under 10 reps.</p>
+            <p class="error-message" id="reps-error"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5v.01"/></svg><span></span></p>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-accent btn-lg btn-block">Calculate</button>
+            <button type="button" class="btn btn-outline btn-block" id="calc-reset">Reset</button>
+          </div>
+        </form>
+      </div>
+      <div class="result-panel is-empty" id="result-panel">
+        <div class="result-placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3H4v5M15 3h5v5M9 21H4v-5M15 21h5v-5"/></svg>
+          <p>Fill in the form and hit calculate to see your results here.</p>
+        </div>
+        <div class="result-body" id="result-body">
+            <p class="result-eyebrow">Your estimated one rep max</p>
+            <div class="result-grid" style="grid-template-columns:1fr;">
+              <div class="result-stat"><div class="stat-label">Estimated 1RM</div><div class="stat-value" id="out-1rm" style="font-size:1.6rem;">—</div></div>
+            </div>
+            <div class="result-grid">
+              <div class="result-stat"><div class="stat-label">Epley</div><div class="stat-value" id="out-epley">—</div></div>
+              <div class="result-stat"><div class="stat-label">Brzycki</div><div class="stat-value" id="out-brzycki">—</div></div>
+            </div>
+            <p class="result-eyebrow" style="margin-top:22px;">Training percentages</p>
+            <div id="pct-table"></div>
+            <p class="result-note" style="margin-top:16px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5v.01"/></svg><span>Estimates get less reliable above about 10 reps — for best accuracy, use a set of 1-6 reps.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight container-narrow">
+    <div class="explain-grid" style="margin-top:0;">
+      <div class="card explain-card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16M4 12a2 2 0 100-4 2 2 0 000 4zM4 12a2 2 0 100 4 2 2 0 000-4zM20 12a2 2 0 100-4 2 2 0 000 4zM20 12a2 2 0 100 4 2 2 0 000-4z"/></svg></div>
+        <h3>Why estimate instead of testing?</h3>
+        <p>Testing a true 1RM is fatiguing and carries injury risk, especially for beginners. Estimating from a submaximal set gets you a useful number without the wear and tear.</p>
+      </div>
+      <div class="card explain-card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h7l-1 8 11-14h-7l1-6Z"/></svg></div>
+        <h3>Epley vs. Brzycki</h3>
+        <p>Both formulas estimate 1RM from reps and weight, but weight the relationship slightly differently — we average them for a more balanced estimate.</p>
+      </div>
+      <div class="card explain-card reveal">
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></div>
+        <h3>Using the percentage table</h3>
+        <p>Programs are often written as a percentage of 1RM — knowing your estimated max lets you calculate working weights for any prescribed intensity.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section-tight container-narrow">
+    <h2 class="reveal" style="font-size:1.4rem; margin-bottom:16px;">The formulas</h2>
+    <pre class="formula-block reveal"><span class="fx-label"># Epley</span>
+1RM = weight × (1 + reps / 30)
+
+<span class="fx-label"># Brzycki</span>
+1RM = weight × 36 / (37 - reps)
+
+<span class="fx-label"># We show</span>
+Displayed 1RM = average of both formulas</pre>
+  </section>
+  <section class="section-tight container-narrow">
+    <h2 class="reveal text-center" style="margin-bottom:8px;">Common questions</h2>
+    <div class="accordion reveal">
+      <div class="accordion-item">
+        <h3><button class="accordion-trigger" aria-expanded="false"><span>How accurate is this estimate?</span><span class="plus" aria-hidden="true"></span></button></h3>
+        <div class="accordion-panel"><div class="accordion-panel-inner"><p>It's generally within a few percent of your true max for sets of 1-6 reps. Accuracy drops the higher your rep count goes, since fatigue starts to affect the relationship.</p></div></div>
+      </div>
+      <div class="accordion-item">
+        <h3><button class="accordion-trigger" aria-expanded="false"><span>Should I train at my estimated 1RM?</span><span class="plus" aria-hidden="true"></span></button></h3>
+        <div class="accordion-panel"><div class="accordion-panel-inner"><p>No — use the percentage table below to work out training weights at whatever intensity your program calls for, rather than testing the estimated max directly.</p></div></div>
+      </div>
+      <div class="accordion-item">
+        <h3><button class="accordion-trigger" aria-expanded="false"><span>Does this work for any exercise?</span><span class="plus" aria-hidden="true"></span></button></h3>
+        <div class="accordion-panel"><div class="accordion-panel-inner"><p>It works best for compound barbell lifts like squat, bench and deadlift. It's less reliable for isolation exercises or bodyweight movements.</p></div></div>
+      </div>
+    </div>
+  </section>
+  <section class="section container">
+    <h2 class="reveal text-center" style="margin-bottom:32px;">Related calculators</h2>
+    <div class="grid grid-3 reveal-group">
+      <a class="calc-card card reveal" href="weight-plate-calculator.html">
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16M4 12a2 2 0 100-4 2 2 0 000 4zM4 12a2 2 0 100 4 2 2 0 000-4zM20 12a2 2 0 100-4 2 2 0 000 4zM20 12a2 2 0 100 4 2 2 0 000-4z"/></svg></div>
+        <h3>Weight Plate Calculator</h3>
+        <p>Work out exactly which plates to load on the bar.</p>
+        <span class="calc-card-tag">Strength</span>
+      </a>
+      <a class="calc-card card reveal" href="wilks-dots-calculator.html">
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16M4 12a2 2 0 100-4 2 2 0 000 4zM4 12a2 2 0 100 4 2 2 0 000-4zM20 12a2 2 0 100-4 2 2 0 000 4zM20 12a2 2 0 100 4 2 2 0 000-4z"/></svg></div>
+        <h3>Wilks / DOTS Calculator</h3>
+        <p>Score your relative powerlifting strength across lifts.</p>
+        <span class="calc-card-tag">Strength</span>
+      </a>
+      <a class="calc-card card reveal" href="macro-calculator.html">
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg></div>
+        <h3>Macro Calculator</h3>
+        <p>Turn your daily calorie target into a protein, carb and fat split.</p>
+        <span class="calc-card-tag">Nutrition</span>
+      </a>
+    </div>
+  </section>
+  <section class="section container">
+    <h2 class="reveal text-center" style="margin-bottom:32px;">Related articles</h2>
+    <div class="grid grid-3 reveal-group">
+      <a class="mini-card reveal" href="../blog/natural-muscle-growth-limits.html">
+        <span class="eyebrow">Training</span>
+        <h3>Natural Muscle Growth: What to Expect</h3>
+        <p>Realistic timelines for building lean mass without shortcuts.</p>
+      </a>
+      <a class="mini-card reveal" href="../blog/tracking-progress-beyond-the-scale.html">
+        <span class="eyebrow">Body composition</span>
+        <h3>Tracking Progress Beyond the Scale</h3>
+        <p>Why the number on the scale is only part of the picture.</p>
+      </a>
+      <a class="mini-card reveal" href="../blog/best-macro-split-for-your-goal.html">
+        <span class="eyebrow">Nutrition</span>
+        <h3>Best Macro Split for Your Goal</h3>
+        <p>How to adjust protein, carbs and fat for cutting, bulking or maintaining.</p>
+      </a>
+    </div>
+  </section>
+  <section class="section container">
+    <div class="cta-band reveal">
+      <h2>Explore the rest of the toolkit</h2>
+      <p>16 free calculators across nutrition, body composition, strength and cardio.</p>
+      <a class="btn btn-accent btn-lg" href="index.html">Browse All Calculators</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" data-component="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="brand" style="margin-bottom:12px; display:inline-flex;"><span class="brand-mark">SH</span>SH Fitness Tools</a>
+        <p>Train smarter. Eat better. Perform better. Free, precise calculators for training and nutrition.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Nutrition</h4>
+          <a href="macro-calculator.html">Macro Calculator</a>
+          <a href="protein-intake-calculator.html">Protein Intake</a>
+          <a href="water-intake-calculator.html">Water Intake</a>
+          <a href="creatine-dosage-calculator.html">Creatine Dosage</a>
+        </div>
+        <div class="footer-col">
+          <h4>Body composition</h4>
+          <a href="body-fat-percentage-calculator.html">Body Fat Percentage</a>
+          <a href="ffmi-calculator.html">FFMI</a>
+          <a href="ideal-weight-calculator.html">Ideal Weight</a>
+          <a href="lean-body-mass-calculator.html">Lean Body Mass</a>
+        </div>
+        <div class="footer-col">
+          <h4>Strength training</h4>
+          <a href="one-rep-max-calculator.html">One Rep Max</a>
+          <a href="weight-plate-calculator.html">Weight Plate</a>
+          <a href="wilks-dots-calculator.html">Wilks / DOTS</a>
+        </div>
+        <div class="footer-col">
+          <h4>Cardio &amp; activity</h4>
+          <a href="heart-rate-zone-calculator.html">Heart Rate Zone</a>
+          <a href="running-pace-calculator.html">Running Pace</a>
+          <a href="vo2-max-calculator.html">VO2 Max</a>
+          <a href="calories-burned-calculator.html">Calories Burned</a>
+          <a href="steps-to-distance-calculator.html">Steps to Distance</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="../about.html">About</a>
+          <a href="../blog/index.html">Articles</a>
+          <a href="../contact.html">Contact</a>
+          <a href="../privacy-policy.html">Privacy Policy</a>
+          <a href="../terms.html">Terms &amp; Conditions</a>
+          <a href="../disclaimer.html">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 SH Fitness Tools. All rights reserved.</span>
+      <span>Bunbury, Western Australia</span>
+    </div>
+  </div>
+</footer>
+
+<div class="store-modal-overlay" id="store-modal-overlay" role="dialog" aria-modal="true" aria-labelledby="store-modal-title" hidden>
+  <div class="store-modal">
+    <button class="store-modal-close" type="button" id="store-modal-close" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="store-modal-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l1.5-5h15L21 9M3 9h18M3 9v9a2 2 0 002 2h14a2 2 0 002-2V9M8 13a2 2 0 004 0"/></svg>
+    </div>
+    <h3 id="store-modal-title">Gear up at the SH Store</h3>
+    <p>Gear and tracking tools picked to match the calculators on this site — everything you need to act on your numbers.</p>
+    <ul class="store-modal-perks">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Free shipping over $75</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Trusted by the SH Fitness community</li>
+    </ul>
+    <div class="store-modal-actions">
+      <a class="btn btn-accent btn-block" href="https://sh-fitness-3.myshopify.com/" target="_blank" rel="noopener">Visit the store</a>
+      <button class="btn btn-outline" type="button" id="store-modal-dismiss">Not now</button>
+    </div>
+  </div>
+</div>
+
+
+<script src="../assets/js/main.js" defer></script>
+<script src="../assets/js/calc-common.js" defer></script>
+<script src="../assets/js/calc/one-rep-max-calculator.js" defer></script>
+</body>
+</html>
